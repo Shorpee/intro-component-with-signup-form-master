@@ -70,6 +70,14 @@ p {
     text-align: right;
     right: 0;
     bottom: -24px;
+    /*display: none;*/
+}
+
+.form-control img {
+    position: absolute;
+    right: 0;
+    top: 14px;
+    margin-right: 10px;
 }
 
 input {
@@ -86,10 +94,6 @@ input::placeholder {
     opacity: 0.7;
 }
 
-input > small {
-    color: #000000;
-    opacity: 0.6;
-}
 
 input:focus {
     outline: none;
