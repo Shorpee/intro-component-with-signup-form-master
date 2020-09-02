@@ -60,6 +60,16 @@ p {
 
 .form-control {
     position: relative;
+    margin-bottom: 30px;
+}
+
+.form-control small {
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    position: absolute;
+    text-align: right;
+    right: 0;
+    bottom: -24px;
 }
 
 input {
@@ -97,6 +107,10 @@ button {
     text-transform: uppercase;
     border: 2.5px solid hsl(154, 59%, 45%);
     margin-bottom: 20px;
+}
+
+button:focus , button:active {
+    outline: none;
 }
 
 .terms {
