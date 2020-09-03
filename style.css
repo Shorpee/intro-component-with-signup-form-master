@@ -70,7 +70,11 @@ p {
     text-align: right;
     right: 0;
     bottom: -24px;
-    /*display: none;*/
+    display: none;
+}
+
+.form-control.error small {
+    display: unset;
 }
 
 .form-control img {
@@ -78,6 +82,11 @@ p {
     right: 0;
     top: 14px;
     margin-right: 10px;
+    display: none;
+}
+
+.form-control.error img {
+    display: unset;
 }
 
 input {
@@ -88,6 +97,11 @@ input {
     border-radius: 5px;
     border: 1.5px solid hsl(249, 10%, 26%);
     width: 100%;
+}
+
+.form-control.error input {
+    border: 2px solid hsl(0, 100%, 74%);
+	color: hsl(0, 100%, 74%);
 }
 
 input::placeholder {
@@ -128,6 +142,11 @@ button:focus , button:active {
 }
 
 @media screen and (max-width: 675px){
+
+    body {
+        background-image: url(./images/bg-intro-mobile.png);
+    }
+
     .container {
         text-align: center;
     }
